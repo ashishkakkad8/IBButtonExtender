@@ -1,6 +1,6 @@
 # IBButtonExtender
 
-Presenting the ButtonExtender for **Border Color**, **Border Width** and **Cornor Radius** function with the @IBDesignable in the Swift Language.
+Presenting the ButtonExtender for **Border Color**, **Border Width** and **Corner Radius** function with the use of **@IBDesignable** and **@IBInspectable** in the Swift Language.
 
 You can change the design of button within your Storyboard or XIB.
 
