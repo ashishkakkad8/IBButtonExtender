@@ -12,9 +12,9 @@ import QuartzCore
 @IBDesignable
 class ButtonExtender: UIButton {
     //MARK: PROPERTIES
-    @IBInspectable var borderColor: UIColor = UIColor.whiteColor() {
+    @IBInspectable var borderColor: UIColor = UIColor.white {
         didSet {
-            layer.borderColor = borderColor.CGColor
+            layer.borderColor = borderColor.cgColor
         }
     }
     
@@ -39,7 +39,7 @@ class ButtonExtender: UIButton {
     }
 
     convenience init() {
-        self.init(frame:CGRectZero)
+        self.init(frame:CGRect.zero)
         setup()
         configure()
     }
@@ -64,13 +64,13 @@ class ButtonExtender: UIButton {
     }
     
     func setup() {
-        layer.borderColor = UIColor.whiteColor().CGColor
+        layer.borderColor = UIColor.white.cgColor
         layer.borderWidth = 1.0
         layer.cornerRadius = 1.0
     }
     
     func configure() {
-        layer.borderColor = borderColor.CGColor
+        layer.borderColor = borderColor.cgColor
         layer.borderWidth = borderWidth
         layer.cornerRadius = cornurRadius
     }
